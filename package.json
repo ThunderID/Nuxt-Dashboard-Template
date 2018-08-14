@@ -1,0 +1,42 @@
+{
+  "name": "thunder-accounting",
+  "version": "1.0.0",
+  "description": "thunder accounting system",
+  "author": "Erick Mo <mo@thunderlab.id>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "npm run css-watch",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "build-css": "node-sass assets -o static/css  --output-style compressed",
+    "watch-css": "node-sass -wr assets -o static/css --output-style compressed",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.0-rc1",
+    "@nuxtjs/proxy": "^1.2.4",
+    "@vue/cli-shared-utils": "^3.0.0",
+    "ajv": "^6.5.2",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.2",
+    "jquery": "^3.3.1",
+    "nuxt": "^1.0.0",
+    "vee-validate": "^2.1.0-beta.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-vue": "^4.7.1",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.3",
+    "prettier": "^1.14.2",
+    "sass-loader": "^7.1.0"
+  }
+}
